@@ -22,7 +22,7 @@ export default defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  retries: process.env.CI ? 2 : 1,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 5,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
@@ -33,15 +33,15 @@ export default defineConfig({
 
 
   // It's Used To Change The Waiting Time Of Expected Assertion Result : By Default It's 5000ms
-   /* expect : 
+    expect : 
    {
      timeout : 10000,
-     toHaveScreenshot : 
+     /* toHaveScreenshot : 
      {
       maxDiffPixelRatio : 0.1 ,
       maxDiffPixels : 50
-     }
-   } , */
+     } */
+   } , 
 
 
 
@@ -57,6 +57,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     headless: false,
+    // You Add This Global Key To Use These Options On The API Testing 
     baseURL : "https://restful-booker.herokuapp.com",
     extraHTTPHeaders : 
     {
