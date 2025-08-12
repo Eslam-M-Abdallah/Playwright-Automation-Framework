@@ -1,0 +1,18 @@
+{
+    "PostCallData": {
+        "id": 5,
+        "title": "CS",
+        "description": "Software Engineering",
+        "pageCount": 0,
+        "excerpt": "string",
+        "publishDate": "2025-08-04T11:42:07.164Z"
+    },
+    "PutCallData": {
+        "id": 1,
+        "title": "Eslam",
+        "description": "Mohamed",
+        "pageCount": 100,
+        "excerpt": "string",
+        "publishDate": "2025-08-04T11:42:57.699Z"
+    }
+}

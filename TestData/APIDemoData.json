@@ -1,0 +1,11 @@
+{
+    "TokenPostCall": {
+        "email": "eabdallah@kashier.io",
+        "password": "Password500$$"
+    },
+    "CreateIPPostCall": {
+        "name": "Eslam 5",
+        "ipAddress": "192.150.12.12",
+        "userId": "668e4adb23674ff6d039a72d"
+    }
+}
