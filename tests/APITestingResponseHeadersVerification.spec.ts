@@ -11,7 +11,7 @@ test("Fetch & Validate Response Headers",async({request})=>
 
         console.log("*******************1*********************")
 
-        const headersArrayValues = getResponse.headersArray()
+        const headersArrayValues = getResponse.headersArray() //If You Want To Store The Headers Inside Array Each Array Element Have Object Contain The Header Name & Value 
         console.log(headersArrayValues)
         expect(headersArrayValues.length).toBe(10)
         expect(headersArrayValues[2].name).toEqual("Date")
