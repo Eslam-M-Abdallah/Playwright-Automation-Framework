@@ -7,7 +7,7 @@ import {test , expect} from "@playwright/test"
   // Second >> npx playwright test Test_File
 
 // If You Want To Run The Same Command To Determine The Env Name Cross-env By Using Shortcut And Run It Any Consloe (cmd - powershell - bash Terminal)
-//You Want At THe Package.json AFter Download The cross-env Package At THe scripts Key Object Add The Shortcut Key & The Value Then Use This Command To Run The Shortcut >> npm run ShortcutName
+//You Want At THe Package.json AFter Download The cross-env Package At THe scripts Key Object Add The Shortcut Key & The Value Then Use This Command To Run The Shortcut >> npm run Short cutName
 
 test("Handel Multiple Environments Practise",async({page})=>
     {
