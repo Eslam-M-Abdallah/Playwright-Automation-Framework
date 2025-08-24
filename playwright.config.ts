@@ -1,13 +1,19 @@
 import { defineConfig, devices } from '@playwright/test';
 import { on } from 'events';
-
+//Import dotenv From dotenv Package To Determine Which Env i Want To Process On It From my Multiples Envs
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
+import dotenv from 'dotenv';
+import path from 'path';
+dotenv.config(
+  {
+    // The File That I Want Playwright To Consider It To Get the Env Varibles From It
+
+    path: process.env.Test_env ? `./Env-Files/.env.${process.env.Test_Env}` : `./Env-Files/.env.staging`  // You Add The Template Literalture Here To Get tHe Env Name As Dynamic Varible During Run The Test Cases 
+
+  });
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -24,7 +30,7 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 1,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : 5,
+  workers: process.env.CI ? 1 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [["html", { open: 'always' }]],
 
@@ -33,15 +39,15 @@ export default defineConfig({
 
 
   // It's Used To Change The Waiting Time Of Expected Assertion Result : By Default It's 5000ms
-    expect : 
-   {
-     timeout : 10000,
-     /* toHaveScreenshot : 
-     {
-      maxDiffPixelRatio : 0.1 ,
-      maxDiffPixels : 50
-     } */
-   } , 
+  expect:
+  {
+    timeout: 10000,
+    /* toHaveScreenshot : 
+    {
+     maxDiffPixelRatio : 0.1 ,
+     maxDiffPixels : 50
+    } */
+  },
 
 
 
@@ -58,11 +64,11 @@ export default defineConfig({
     video: 'retain-on-failure',
     headless: false,
     // You Add This Global Key To Use These Options On The API Testing 
-    baseURL : "https://restful-booker.herokuapp.com",
-    extraHTTPHeaders : 
+    baseURL: "https://restful-booker.herokuapp.com",
+    extraHTTPHeaders:
     {
-      Accept : "application/json" ,
-      "Content-Type" : "application/json", //Any Key Consist Of Two Words Or More Need To Be Between Quotations
+      Accept: "application/json",
+      "Content-Type": "application/json", //Any Key Consist Of Two Words Or More Need To Be Between Quotations
       //Authorization : "Basic YWRtaW46cGFzc3dvcmQxMjM="
     }
     //storageState : './playwright/.auth/auth3.json'
@@ -87,14 +93,14 @@ export default defineConfig({
 
     {
       name: 'firefox',
-      dependencies: ["setup"],
-      use: { ...devices['Desktop Firefox'], storageState: './playwright/.auth/auth4.json' },
+      //dependencies: ["setup"],
+      use: { ...devices['Desktop Firefox'] } //, storageState: './playwright/.auth/auth4.json' },
     },
 
     {
       name: 'webkit',
-      dependencies: ["setup"],
-      use: { ...devices['Desktop Safari'], storageState: './playwright/.auth/auth4.json' },
+      //dependencies: ["setup"],
+      use: { ...devices['Desktop Safari'] }//, storageState: './playwright/.auth/auth4.json' },
     },
     /*
     {
