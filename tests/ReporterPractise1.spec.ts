@@ -9,6 +9,14 @@ import { test, expect } from "@playwright/test"
 // 4- html Reporter >> It's Much Details Rich Graphical Reporter , You Can Genrete It From The CMD By Using The Command --reporter=html Or Set It At The Config File "Reporter" : "html" 
 
 // 5- blob Reporter >> It's Useful When You Run The Tests On Multiple Machines And Want To Merge Then On One Blob Reporter , You Can Genrete It From The CMD By Using The Command --reporter=blob Or Set It At The Config File "Reporter" : "blob"
+
+// 6- json Reporter >> It's Generate Report In Json Object Format , You Can Genrete It From The CMD By Using The Command --reporter=json Or Set It At The Config File "Reporter" : "json"
+
+// 7- Junit Reporter >> It's Same Like The Json Reporter But It's Generate The File Style In XML Format , You Can Genrete It From The CMD By Using The Command --reporter=junit Or Set It At The Config File "Reporter" : "junit"
+  //You Can The Generated xml FIle Reporter To parse It To Junit Report By Usinf The URL:"https://lotterfriends.github.io/online-junit-parser/" Then Upload The xml File Or Directlly The XMl Format 
+
+// 8- 
+
 test("Reports Practise 1", async ({ page }) => {
     await page.goto("https://www.google.com/")
     await expect(page).toHaveTitle("Google")
@@ -21,5 +29,5 @@ test("Reports Practise 2", async ({ page }) => {
 
 test("Reports Practise 3", async ({ page }) => {
     await page.goto("https://www.google.com/")
-    await expect(page).toHaveTitle("Google2")
+    await expect(page).toHaveTitle("Google")
 })
