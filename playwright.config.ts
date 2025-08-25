@@ -32,7 +32,8 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [["html", { open: 'always' }]],
+  //reporter: [["html", { open: 'always' }], ],
+  reporter : "blob" ,// Add The Reporter Style 
 
   //timeout To Change The Waiting Time To Allocate Specific Web Element : By Default It's 30000ms 
   timeout: 25000,
