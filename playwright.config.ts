@@ -11,7 +11,7 @@ dotenv.config(
   {
     // The File That I Want Playwright To Consider It To Get the Env Varibles From It
 
-    path: process.env.Test_env ? `./Env-Files/.env.${process.env.Test_Env}` : `./Env-Files/.env.staging`  // You Add The Template Literalture Here To Get tHe Env Name As Dynamic Varible During Run The Test Cases 
+    path: process.env.Test_Env ? `./Env-Files/.env.${process.env.Test_Env}` : `./Env-Files/.env.staging`  // You Add The Template Literalture Here To Get tHe Env Name As Dynamic Varible During Run The Test Cases 
 
   });
 
