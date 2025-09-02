@@ -36,7 +36,8 @@ export default defineConfig({
   //reporter : [['junit', {outputFile : "Reporter-junit2.xml"}]] ,// Add The Reporter Style 
  // reporter : process.env.CI? "github" : "list" // If You Run The Tests On CI And You Want To Get The Reporter="github"
   //reporter : [["dot"] , ["list"] , ["html" , {open : "always"}]], //Generate multiple Reporters 
-  reporter : "dot" , 
+  // reporter : "dot" , 
+  reporter : [ ['allure-playwright', { outputFolder: '../my-allure-results' }] , ['html']] , 
 
   //timeout To Change The Waiting Time To Allocate Specific Web Element : By Default It's 30000ms 
   timeout: 25000,
@@ -62,11 +63,11 @@ export default defineConfig({
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    //trace: 'on',
+    trace: 'retain-on-failure',
     testIdAttribute: 'data-test',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    headless: false,
+    headless: true,
     // You Add This Global Key To Use These Options On The API Testing 
     baseURL: "https://restful-booker.herokuapp.com",
     extraHTTPHeaders:
