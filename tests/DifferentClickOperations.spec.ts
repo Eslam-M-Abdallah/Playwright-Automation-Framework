@@ -11,7 +11,7 @@ test("Practise On Different Types Of Click " , async({page})=>
         //await page.goto("https://www.builder.ai/")
         //expect(page.locator('#heroBtnCta').getByRole('link', { name: 'Get a free demo' })).toBeEnabled();
         //await page.locator('#heroBtnCta').getByRole('link', { name: 'Get a free demo' }).click()
-        //await page.locator("button#_form_ac_submit").click();
+        //await page.locator("button#_form_ac_submit").click(); 
 
         // dblclick() Method : To Perfoem Double Click Action 
 

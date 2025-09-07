@@ -1,0 +1,42 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - link "Gmail":
+    - /url: https://mail.google.com/mail/&ogbl
+  - link "البحث عن صور":
+    - /url: https://www.google.com/imghp?hl=ar&ogbl
+    - text: صور
+  - button "تطبيقات Google":
+    - img
+  - link "تسجيل الدخول":
+    - /url: https://accounts.google.com/ServiceLogin?hl=ar&passive=true&continue=https://www.google.com/&ec=futura_exp_og_so_72776762_e
+- img "Google"
+- search:
+  - combobox "بحث"
+  - button "أدوات الإدخال"
+  - button "البحث الصوتي"
+  - button "بحث بالصور"
+  - button "بحث Google‏"
+  - button "ضربة حظ"
+- text: "محرّك بحث Google متوفّر باللغة:"
+- link "English":
+  - /url: https://www.google.com/setprefs?sig=0_gKSOKCb5Gq__Q8tfgAfEaQViPFY%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwipgaOFrrqPAxU0gv0HHdBcNwAQ2ZgBCBU
+- contentinfo:
+  - text: مصر
+  - link "لمحة":
+    - /url: https://about.google/?utm_source=google-EG&utm_medium=referral&utm_campaign=hp-footer&fg=1
+  - link "الإعلانات":
+    - /url: https://www.google.com/intl/ar_eg/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1
+  - link "الأعمال":
+    - /url: https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1
+  - link "آلية عمل \"بحث Google\"":
+    - /url: https://google.com/search/howsearchworks/?fg=1
+  - 'link "العقد الثالث من نشاطنا في مجال المناخ: تحقق من عملنا"':
+    - /url: https://sustainability.google/intl/ar/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=
+  - link "الخصوصية":
+    - /url: https://policies.google.com/privacy?hl=ar&fg=1
+  - link "البنود":
+    - /url: https://policies.google.com/terms?hl=ar&fg=1
+  - button "الإعدادات"
+```

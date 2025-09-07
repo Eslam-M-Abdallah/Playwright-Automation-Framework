@@ -76,7 +76,7 @@ test("Practise Test 8" , async ({page})=>
         await console.log("Ending The Practise Test 8")
     })
 
-// 5- (test.fail) : It's Used For Mark The Test Case That Should Be Fail It's Usually be Useful If i Know That Test Case Have Some Broken Implementation For Know & i Want Mark It AS Fail To Show It At The Html Report 
+// 5- (test.fail) : It's Used For Mark The Test Case That Should Be Fail It's Usually be Useful If i Know That Test Case Have Some Broken Implementation For now & i Want Mark It AS Fail To Show It At The Html Report 
 
 
 test("Practise Test 9" , async ({page , browserName})=>

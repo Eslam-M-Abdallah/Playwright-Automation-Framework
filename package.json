@@ -2,7 +2,10 @@
   "name": "playwright_framework_tutorial_work",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "Test-Staging": "cross-env Test_Env=staging npx playwright test HandleMultipleEnv.spec.ts  --project=chromium ",
+    "Test-Production": "cross-env Test_Env=production npx playwright test HandleMultipleEnv.spec.ts  --project=chromium "
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -12,6 +15,9 @@
     "@types/node": "^22.15.18"
   },
   "dependencies": {
-    "csv-parse": "^6.0.0"
+    "allure-playwright": "^3.3.3",
+    "cross-env": "^10.0.0",
+    "csv-parse": "^6.0.0",
+    "dotenv": "^17.2.1"
   }
 }

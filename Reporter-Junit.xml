@@ -1,0 +1,18 @@
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="20.182429">
+<testsuite name="ReporterPractise1.spec.ts" timestamp="2025-08-25T21:27:24.055Z" hostname="chromium" tests="3" failures="0" skipped="0" time="9.65" errors="0">
+<testcase name="Reports Practise 1" classname="ReporterPractise1.spec.ts" time="4.004">
+</testcase>
+<testcase name="Reports Practise 2" classname="ReporterPractise1.spec.ts" time="2.546">
+</testcase>
+<testcase name="Reports Practise 3" classname="ReporterPractise1.spec.ts" time="3.1">
+</testcase>
+</testsuite>
+<testsuite name="ReporterPractise2.spec.ts" timestamp="2025-08-25T21:27:24.055Z" hostname="chromium" tests="3" failures="0" skipped="0" time="9.025" errors="0">
+<testcase name="Reports Practise 4" classname="ReporterPractise2.spec.ts" time="2.242">
+</testcase>
+<testcase name="Reports Practise 5" classname="ReporterPractise2.spec.ts" time="2.848">
+</testcase>
+<testcase name="Reports Practise 6" classname="ReporterPractise2.spec.ts" time="3.935">
+</testcase>
+</testsuite>
+</testsuites>
