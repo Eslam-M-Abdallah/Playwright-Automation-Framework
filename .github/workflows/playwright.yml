@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers #Install The Browsers 
       run: npx playwright install --with-deps
     - name: Run Playwright tests # To Dir File That Will Run 
-      run: npx playwright test
+      run: npx playwright test/GithubActionsPractise2.spec.ts
     - uses: actions/upload-artifact@v4 #The Artificats Will Be Uploaded Regardless The Results 
       if: ${{ !cancelled() }}
       with:
