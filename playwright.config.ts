@@ -37,7 +37,11 @@ export default defineConfig({
  // reporter : process.env.CI? "github" : "list" // If You Run The Tests On CI And You Want To Get The Reporter="github"
   //reporter : [["dot"] , ["list"] , ["html" , {open : "always"}]], //Generate multiple Reporters 
   // reporter : "dot" , 
-  reporter : [ ['allure-playwright', { outputFolder: '../my-allure-results' }] , ['html'] , ['github']] , 
+  reporter : [
+  ['allure-playwright', { outputFolder: 'my-allure-results' }],
+  ['html', { outputFolder: 'playwright-report', open: 'never' }],
+  ['github']
+],
 
   //timeout To Change The Waiting Time To Allocate Specific Web Element : By Default It's 30000ms 
   timeout: 25000,
