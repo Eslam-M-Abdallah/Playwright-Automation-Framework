@@ -1,0 +1,27 @@
+name: Playwright Tests # Name Of The github Actions Workflow
+on: # The Events That Will Trigger Run this Workflow
+  push:
+    branches: [ feature-branch-name, master ] # The Branches That i Push On It 
+  pull_request:
+    branches: [ main, master ] # Target Branch
+jobs: 
+  test: # Job Name & Steps That Will Happen
+    timeout-minutes: 60 #After This Timeout The job Will Be Automatically Terminated
+    runs-on: ubuntu-latest #windows-latest #macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4 #Setup The Node Packages 
+      with:
+        node-version: lts/* 
+    - name: Install dependencies # Install The Dependencies 
+      run: npm ci
+    - name: Install Playwright Browsers #Install The Browsers 
+      run: npx playwright install --with-deps
+    - name: Run Playwright tests # The Dir File That Will Run 
+      run: npx playwright test tests/GithubActionsPractise2.spec.ts
+    - uses: actions/upload-artifact@v4 #The Artificats Will Be Uploaded Regardless The Results 
+      if: ${{ !cancelled() }}
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30 #You Artifiacts Like Reports Will Still Exist Inside the Workflow Until 30 Days 
