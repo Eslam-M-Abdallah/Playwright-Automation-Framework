@@ -6,7 +6,7 @@ on: # The Events That Will Trigger Run this Workflow
     branches: [ main, master ] # Target Branch
 jobs: 
   test: # Job Name & Steps That Will Happen
-    timeout-minutes: 60 #After This Timeout The job Will Be Automatically Terminated
+    timeout-minutes: 60 #After This Timeout The job Will Be Automatically Terminated/Cancelled
     runs-on: ubuntu-latest #windows-latest #macos-latest
     steps:
     - uses: actions/checkout@v4
