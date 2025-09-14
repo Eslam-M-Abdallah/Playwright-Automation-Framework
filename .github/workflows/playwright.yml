@@ -6,7 +6,7 @@ on: # The Events That Will Trigger Run this Workflow
     branches: [ main, master ] # Target Branch
 jobs: 
   test: # Job Name & Steps That Will Happen
-    timeout-minutes: 60 #After This Timeout The job Will Be Automatically Terminated/Cancelled
+    timeout-minutes:  60 #After This Timeout The job Will Be Automatically Terminated/Cancelled
     runs-on: ubuntu-latest #windows-latest #macos-latest
     steps:
     - uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers #Install The Browsers 
       run: npx playwright install --with-deps
     - name: Run Playwright tests # The Dir File That Will Run 
-      run: npx playwright test tests/GithubActionsPractise2.spec.ts
+      run: npx playwright test tests/JenkinsPractise1.spec.ts
     - uses: actions/upload-artifact@v4 #The Artificats Will Be Uploaded Regardless The Results 
       if: ${{ !cancelled() }}
       with:
