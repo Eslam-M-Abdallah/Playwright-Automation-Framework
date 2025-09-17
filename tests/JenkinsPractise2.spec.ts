@@ -47,5 +47,5 @@ test("Verify Login Successfully 5", {tag : '@A3'} ,async ({ page }) => {
     await page.locator("#password").fill("secret_sauce")
     await page.locator("#login-button").click()
     await expect(page.locator('[data-test="shopping-cart-link"]')).toBeVisible() //test
-    console.log("Ending Practise 5..")
+    console.log("Ending Practise 5..");
 })
