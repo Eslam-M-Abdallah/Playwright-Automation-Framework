@@ -1,7 +1,7 @@
 name: Playwright Tests # Name Of The github Actions Workflow
 on: # The Events That Will Trigger Run this Workflow
-  push:
-    branches: [ feature-branch-name, master ] # The Branches That i Push On It 
+  #push:
+    #branches: [ feature-branch-name, master ] # The Branches That i Push On It 
   pull_request:
     branches: [ main, master ] # Target Branch
 jobs: 
