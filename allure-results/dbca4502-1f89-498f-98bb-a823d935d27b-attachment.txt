@@ -1,0 +1,51 @@
+{
+  body: {
+    success: true,
+    accessToken: {
+      token: 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoiNjY4ZTRhZGIyMzY3NGZmNmQwMzlhNzJkIiwidXNlclR5cGUiOiJtZXJjaGFudCIsInJvbGVJZCI6IjVkNmU3YTY0NzEyNjE3MjFmOWVhMjNmOSIsInNlbGVjdGVkTUlEIjoiTUlELTIyOTM0LTM0MiIsImlzTGl2ZSI6ZmFsc2UsImFjY291bnRUeXBlIjoiUEYiLCJpc0VuYWJsZWRBdXRoTkNhcCI6ZmFsc2UsIndlYmhvb2siOm51bGwsImZ1bGxOYW1lIjoiSXNsYW0gTW9oYW1lZCIsImVtYWlsIjoiZWFiZGFsbGFoQGthc2hpZXIuaW8ifSwiaWF0IjoxNzU5MTUwODYwLCJleHAiOjE3NTkyMzcyNjB9.KUQfeGJCZBTfo2B2RONgkRbWtZ2Kn-Q1FR1bvQJwolwTlFd99ArmR5E9AYI0gYF3yj5hP9xPBzHFY4YiDYe-Ff7FNYFS7uiwVuTx-0OQjbKsjk6WO6dzI1y9lqad2JmlfAqGK5-uyhQWT1VTImof1pZUpELvOLrzpmd8zG8kHiSuHOcANAV3EodwidBneX2gb5D-v_zr7lgWqTsOUBPiqDZwD8eub3FV65n2DMtCAnssZpW5g8LAu6cZpbOIUqUR-qFeRNZxZZDp4VOwPYYmCGHdznwDFX0mIaZ8Cow2ulIPA9SCSBGiS4j0KweNWrXHIoY3A-D-Kj5gqkNqlTiniQ',
+      expires: '2025-09-30T16:01:00+03:00'
+    },
+    refreshToken: {
+      token: '1e5ce3667ca290224f16dfad3dcc9517e3dcc275b402c0e4170a7ff80f9c34d6ecb4dc57df1aefecadf599e0994398497a0aab009fa00967f707d63a82f0ee3e39f9',
+      expires: '2025-10-06T16:01:00+03:00'
+    },
+    userType: 'merchant',
+    signupKey: 'eabdallah@kashier.io',
+    merchantId: 'MID-22934-342',
+    actions: { '*': 'any' },
+    belongsTo: [ [Object], [Object], [Object], [Object], [Object] ],
+    language: 'en',
+    isLive: false,
+    fullName: 'Islam Mohamed',
+    settings: { defaultCurrency: [Object], defaultDashboardDateRange: 'monthly' },
+    currencies: [],
+    currenciesTest: [ 'EGP', 'USD', 'EUR', 'GBP' ],
+    allowedPaymentMethods: {
+      acceptedPaymentMethods: [],
+      acceptedBNPLMethods: [],
+      bnplSettlementTypes: {},
+      terminalCredentials: {},
+      transfersEnabled: false,
+      transfersProviders: [],
+      operations: [Object],
+      acceptedCardProviders: [],
+      acceptedWalletProviders: [],
+      acceptedCardWalletProviders: []
+    },
+    hasAccounts: true,
+    enabledFeatures: [
+      'customer',
+      'paymentLink',
+      'maker-checker',
+      'pcc',
+      'multi accounts'
+    ]
+  },
+  message: 'success'
+}
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOnsidXNlcklkIjoiNjY4ZTRhZGIyMzY3NGZmNmQwMzlhNzJkIiwidXNlclR5cGUiOiJtZXJjaGFudCIsInJvbGVJZCI6IjVkNmU3YTY0NzEyNjE3MjFmOWVhMjNmOSIsInNlbGVjdGVkTUlEIjoiTUlELTIyOTM0LTM0MiIsImlzTGl2ZSI6ZmFsc2UsImFjY291bnRUeXBlIjoiUEYiLCJpc0VuYWJsZWRBdXRoTkNhcCI6ZmFsc2UsIndlYmhvb2siOm51bGwsImZ1bGxOYW1lIjoiSXNsYW0gTW9oYW1lZCIsImVtYWlsIjoiZWFiZGFsbGFoQGthc2hpZXIuaW8ifSwiaWF0IjoxNzU5MTUwODYwLCJleHAiOjE3NTkyMzcyNjB9.KUQfeGJCZBTfo2B2RONgkRbWtZ2Kn-Q1FR1bvQJwolwTlFd99ArmR5E9AYI0gYF3yj5hP9xPBzHFY4YiDYe-Ff7FNYFS7uiwVuTx-0OQjbKsjk6WO6dzI1y9lqad2JmlfAqGK5-uyhQWT1VTImof1pZUpELvOLrzpmd8zG8kHiSuHOcANAV3EodwidBneX2gb5D-v_zr7lgWqTsOUBPiqDZwD8eub3FV65n2DMtCAnssZpW5g8LAu6cZpbOIUqUR-qFeRNZxZZDp4VOwPYYmCGHdznwDFX0mIaZ8Cow2ulIPA9SCSBGiS4j0KweNWrXHIoY3A-D-Kj5gqkNqlTiniQ
+{
+  success: false,
+  error: 'DUPLICATE_IP_ADDRESS',
+  message: 'IP address "192.150.12.19" is already whitelisted for this user'
+}
