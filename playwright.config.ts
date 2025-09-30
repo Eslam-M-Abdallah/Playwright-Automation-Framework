@@ -80,7 +80,7 @@ export default defineConfig({
     testIdAttribute: 'data-test',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    headless: false,
+    headless: true,
     // You Add This Global Key To Use These Options On The API Testing 
     baseURL: "https://restful-booker.herokuapp.com",
     extraHTTPHeaders:
