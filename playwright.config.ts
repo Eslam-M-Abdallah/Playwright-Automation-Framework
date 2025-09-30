@@ -7,13 +7,22 @@ import { on } from 'events';
  */
 import dotenv from 'dotenv';
 import path from 'path';
-dotenv.config(
+/*dotenv.config(
   {
     // The File That I Want Playwright To Consider It To Get the Env Varibles From It
 
     path: process.env.Test_Env ? `./Env-Files/.env.${process.env.Test_Env}` : `./Env-Files/.env.staging`  // You Add The Template Literalture Here To Get tHe Env Name As Dynamic Varible During Run The Test Cases 
 
   });
+*/
+
+dotenv.config(
+  {
+    // The File That I Want Playwright To Consider It To Get the Enrypted Data From It 
+
+    path: path.resolve('TestData' , '.env') //"./TestData/.env"
+  });
+
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -71,7 +80,7 @@ export default defineConfig({
     testIdAttribute: 'data-test',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    headless: true,
+    headless: false,
     // You Add This Global Key To Use These Options On The API Testing 
     baseURL: "https://restful-booker.herokuapp.com",
     extraHTTPHeaders:

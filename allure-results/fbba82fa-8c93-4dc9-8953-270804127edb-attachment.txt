@@ -1,0 +1,2 @@
+Decrypted Username: standard_user
+Decrypted Pass : secret_sauce
