@@ -1,95 +1,37 @@
-<testsuites id="" name="" tests="6" failures="1" skipped="0" errors="0" time="48.216820999999996">
-<testsuite name="ReporterPractise1.spec.ts" timestamp="2025-08-25T21:29:11.592Z" hostname="chromium" tests="3" failures="0" skipped="0" time="8.622" errors="0">
-<testcase name="Reports Practise 1" classname="ReporterPractise1.spec.ts" time="3.736">
-</testcase>
-<testcase name="Reports Practise 2" classname="ReporterPractise1.spec.ts" time="1.973">
-</testcase>
-<testcase name="Reports Practise 3" classname="ReporterPractise1.spec.ts" time="2.913">
-</testcase>
-</testsuite>
-<testsuite name="ReporterPractise2.spec.ts" timestamp="2025-08-25T21:29:11.592Z" hostname="chromium" tests="3" failures="1" skipped="0" time="36.286" errors="0">
-<testcase name="Reports Practise 4" classname="ReporterPractise2.spec.ts" time="4.701">
-</testcase>
-<testcase name="Reports Practise 5" classname="ReporterPractise2.spec.ts" time="3.778">
-</testcase>
-<testcase name="Reports Practise 6" classname="ReporterPractise2.spec.ts" time="27.807">
-<failure message="ReporterPractise2.spec.ts:13:5 Reports Practise 6" type="FAILURE">
-<![CDATA[  [chromium] › ReporterPractise2.spec.ts:13:5 › Reports Practise 6 ─────────────────────────────────
-
-    Error: Timed out 10000ms waiting for expect(page).toHaveTitle(expected)
-
-    Locator: locator(':root')
-    Expected string: "Google4"
-    Received string: "Google"
-    Call log:
-      - Expect "toHaveTitle" with timeout 10000ms
-      - waiting for locator(':root')
-        13 × locator resolved to <html dir="rtl" lang="ar" itemscope="" itemtype="http://schema.org/WebPage">…</html>
-           - unexpected value "Google"
-
-
-      13 | test("Reports Practise 6", async ({ page }) => {
-      14 |     await page.goto("https://www.google.com/")
-    > 15 |     await expect(page).toHaveTitle("Google4")
-         |                        ^
-      16 | })
-        at C:\Users\iabdallah\Desktop\PLaywright_Framework_Tutorial_Work\tests\ReporterPractise2.spec.ts:15:24
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\ReporterPractise2-Reports-Practise-6-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\ReporterPractise2-Reports-Practise-6-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-results\ReporterPractise2-Reports-Practise-6-chromium\error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Timed out 10000ms waiting for expect(page).toHaveTitle(expected)
-
-    Locator: locator(':root')
-    Expected string: "Google4"
-    Received string: "Google"
-    Call log:
-      - Expect "toHaveTitle" with timeout 10000ms
-      - waiting for locator(':root')
-        13 × locator resolved to <html dir="rtl" lang="ar" itemscope="" itemtype="http://schema.org/WebPage">…</html>
-           - unexpected value "Google"
-
-
-      13 | test("Reports Practise 6", async ({ page }) => {
-      14 |     await page.goto("https://www.google.com/")
-    > 15 |     await expect(page).toHaveTitle("Google4")
-         |                        ^
-      16 | })
-        at C:\Users\iabdallah\Desktop\PLaywright_Framework_Tutorial_Work\tests\ReporterPractise2.spec.ts:15:24
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results\ReporterPractise2-Reports-Practise-6-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results\ReporterPractise2-Reports-Practise-6-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-results\ReporterPractise2-Reports-Practise-6-chromium-retry1\error-context.md
-]]>
-</failure>
+<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="17.517771">
+<testsuite name="AzureDevopsPractise1.spec.ts" timestamp="2025-10-02T12:38:33.353Z" hostname="firefox" tests="5" failures="0" skipped="0" time="13.011" errors="0">
+<testcase name="Verify Login Successfully 1" classname="AzureDevopsPractise1.spec.ts" time="4.546">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\ReporterPractise2-Reports-Practise-6-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\ReporterPractise2-Reports-Practise-6-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\ReporterPractise2-Reports-Practise-6-chromium\error-context.md]]
-
-[[ATTACHMENT|test-results\ReporterPractise2-Reports-Practise-6-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\ReporterPractise2-Reports-Practise-6-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\ReporterPractise2-Reports-Practise-6-chromium-retry1\error-context.md]]
+<![CDATA[Starting Practise 1..
+Ending Practise 1..
+]]>
+</system-out>
+</testcase>
+<testcase name="Verify Login Successfully 2" classname="AzureDevopsPractise1.spec.ts" time="2.008">
+<system-out>
+<![CDATA[Starting Practise 2..
+Ending Practise 2..
+]]>
+</system-out>
+</testcase>
+<testcase name="Verify Login Successfully 3" classname="AzureDevopsPractise1.spec.ts" time="2.022">
+<system-out>
+<![CDATA[Starting Practise 3..
+Ending Practise 3..
+]]>
+</system-out>
+</testcase>
+<testcase name="Verify Login Successfully 4" classname="AzureDevopsPractise1.spec.ts" time="2.055">
+<system-out>
+<![CDATA[Starting Practise 4..
+Ending Practise 4..
+]]>
+</system-out>
+</testcase>
+<testcase name="Verify Login Successfully 5" classname="AzureDevopsPractise1.spec.ts" time="2.38">
+<system-out>
+<![CDATA[Starting Practise 5..
+Ending Practise 5..
 ]]>
 </system-out>
 </testcase>
